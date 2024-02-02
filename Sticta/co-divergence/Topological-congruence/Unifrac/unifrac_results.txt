@@ -1,0 +1,33 @@
+ --- METHOD: Rooted Robinson-Foulds --- 
+Host-Microbe Score:   1.0
+Max Stochastic Metric:  2.0
+Normalized Score: 0.5
+Random Trees with Equivalent or More Congruent Score: 60475
+Total Trees: 180000
+P-Value: 0.3359722222222222
+
+ --- METHOD: Rooted Matching Cluster --- 
+Host-Microbe Score:   2.0
+Max Stochastic Metric:  6.0
+Normalized Score: 0.3333333333333333
+Random Trees with Equivalent or More Congruent Score: 30775
+Total Trees: 180000
+P-Value: 0.17097222222222222
+
+ --- METHOD: Unrooted Robinson-Foulds --- 
+Host-Microbe Score:   0.0
+Max Stochastic Metric:  1.0
+Normalized Score: 0.0
+Random Trees with Equivalent or More Congruent Score: 60255
+Total Trees: 180000
+P-Value: 0.33475
+
+ --- METHOD: Unrooted Matching Split --- 
+Host-Microbe Score:   0.0
+Max Stochastic Metric:  2.0
+Normalized Score: 0.0
+Random Trees with Equivalent or More Congruent Score: 60255
+Total Trees: 180000
+P-Value: 0.33475
+
+
