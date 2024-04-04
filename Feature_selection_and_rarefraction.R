@@ -115,6 +115,9 @@ colnames(tax_table(ps)) <-
 
 sum_before <- sample_sums(ps)
 
+#
+otu_all <- otu.data.table(ps) %>% column_to_rownames(var = "Sample")
+
 ## Rarefraction curve
 min_value <- min(rowSums(t(otu_all)))
 
@@ -131,8 +134,6 @@ hist.reads <- ggplot(df, aes(x=reads)) +
   labs(title="Histogram: Reads per sample") +
   xlab("Read Count") + 
   ylab("Sample Count")
-
-otu_all <- otu.data.table(ps) %>% column_to_rownames(var = "Sample")
 
 ## Plot
 
@@ -170,9 +171,7 @@ map_dfr(rarecurve_data, bind_rows) %>%
   drop_na() %>%
   mutate(n_seqs = as.numeric(str_replace(name, "N", ""))) %>%
   ggplot(aes(x=n_seqs, y=value, color =Group)) +
-  geom_vline(xintercept = min_value, color="black", linetype="dashed") +
   geom_line(show.legend = FALSE) +
-  annotate(geom='text', x=5000, y=10, label="Minimum read value", fontface=1) +
   scale_color_manual(values = plot.colors) +
   ggtitle("Rarefraction curves") +
   labs(x = "Sample size", y= "ASVs Count") +

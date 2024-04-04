@@ -1,134 +1,134 @@
 sample-id	description	site	host_genus	host_species	host_species_ITS	latitude	longitude	Type
-Sample1	Cora 5	Paramo del Verjon	Cora	cora	Cora_paraciferrii	4.560906	-74.004035	Folioso
-Sample4	Sticta impressula 2	Paramo del Verjon	Sticta	impressula	Sticta_sylvatica	4.560906	-74.004035	Folioso
-Sample5	Stereocaulon pomiferum 1	Paramo del Verjon	Stereocaulon	pomiferum	Stereocaulon_atlanticum	4.560906	-74.004035	Fruticoso/Escamuloso
-Sample8	Sticta andina 3	Paramo del Verjon	Sticta	andina	Sticta_sp	4.559288	-73.998915	Folioso
-Sample9	Cora 4	Paramo del Verjon	Cora	cora	Cora_paraciferrii	4.559288	-73.998915	Folioso
-Sample13	Stereocaulon ramulosum 2	Paramo del Verjon	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.559288	-73.998915	Fruticoso/Escamuloso
-Sample14	Sticta impressula 1	Paramo del Verjon	Sticta	impressula	Sticta_sylvatica	4.560906	-74.004035	Folioso
-Sample15	Sticta gyalocarpa 4	Paramo del Verjon	Sticta	gyalocarpa	Sticta_gyalocarpa	4.558512	-73.99822	Folioso
-Sample20	Sticta andina 1	Paramo del Verjon	Sticta	andina	Sticta_sp	4.560558	-74.001963	Folioso
-Sample21	Cora 2	Paramo del Verjon	Cora	cora	Cora_paraciferrii	4.560558	-74.001963	Folioso
-Sample22	Sticta gyalocarpa 3	Paramo del Verjon	Sticta	gyalocarpa	Sticta_gyalocarpa	4.559288	-73.998915	Folioso
-Sample23	Cora 3	Paramo del Verjon	Cora	cora	Cora_paraciferrii	4.559288	-73.998915	Folioso
-Sample26	Stereocaulon ramulosum 1	Paramo del Verjon	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.559288	-73.998915	Fruticoso/Escamuloso
-Sample27	Stereocaulon sp.	Paramo del Verjon	Stereocaulon	stereocaulon	Stereocaulon_atlanticum	4.559288	-73.998915	Fruticoso/Escamuloso
-Sample28	Stereocaulon ramulosum 4	Paramo del Verjon	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.559288	-73.998915	Fruticoso/Escamuloso
-Sample29	Sticta gyalocarpa 5	Paramo del Verjon	Sticta	gyalocarpa	Sticta_gyalocarpa	4.558512	-73.99822	Folioso
-Sample30	Sticta impressula 3	Paramo del Verjon	Sticta	impressula	Sticta_sylvatica	4.558512	-73.99822	Folioso
-Sample31	Sticta andina 2	Paramo del Verjon	Sticta	andina	Sticta_sp	4.560906	-74.004035	Folioso
-Sample32	Sustrato de Cora 5	Paramo del Verjon	Sustrato	sustrato	Cora_paraciferrii_sustrato	4.560906	-74.004035	Folioso
-Sample33	Cora 8	Paramo del Verjon	Cora	cora	Cora_paraciferrii	4.560906	-74.004035	Folioso
-Sample34	Cora 6	Paramo del Verjon	Cora	cora	Cora_paraciferrii	4.560906	-74.004035	Folioso
-Sample35	Cora 7	Paramo del Verjon	Cora	cora	Cora_paraciferrii	4.560906	-74.004035	Folioso
-Sample37	Sticta humboldtii 4	Paramo del Verjon	Sticta	humboldtii	Sticta_arachnofuliginosa	4.558512	-73.99822	Folioso
-Sample38	Sticta gyalocarpa 2	Paramo del Verjon	Sticta	gyalocarpa	Sticta_gyalocarpa	4.560906	-74.004035	Folioso
-Sample39	Sticta gyalocarpa 1	Paramo del Verjon	Sticta	gyalocarpa	Sticta_gyalocarpa	4.560558	-74.001963	Folioso
-Sample40	Sticta humboldtii 1	Paramo del Verjon	Sticta	humboldtii	Sticta_arachnofuliginosa	4.560558	-74.001963	Folioso
-Sample41	Sticta humboldtii 2	Paramo del Verjon	Sticta	humboldtii	Sticta_arachnofuliginosa	4.560906	-74.004035	Folioso
-Sample42	Sticta humboldtii 3	Paramo del Verjon	Sticta	humboldtii	Sticta_arachnofuliginosa	4.559288	-73.998915	Folioso
-Sample43	Sustrato de Sticta humboldtii 1	Paramo del Verjon	Sustrato	sustrato	Sticta_arachnofuliginosa_sustrato	4.559288	-73.998915	Folioso
-Sample45	Stereocaulon ramulosum 5	Paramo del Verjon	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.559288	-73.998915	Fruticoso/Escamuloso
-Sample47	Cora 1	Paramo del Verjon	Cora	cora	Cora_paraciferrii	4.559288	-73.998915	Folioso
-Sample49	Stereocaulon tomentosum 2	Paramo del Verjon	Stereocaulon	tomentosum	Stereocaulon_sp	4.559288	-73.998915	Fruticoso/Escamuloso
-Sample51	Stereocaulon ramulosum 3	Paramo de Chingaza	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.559288	-73.998915	Fruticoso/Escamuloso
-Sample54	Stereocaulon tomentosum 2	Paramo de Chingaza	Stereocaulon	tomentosum	Stereocaulon_atlanticum	4.559288	-73.998915	Fruticoso/Escamuloso
-Sample55	Cora 6	Paramo de Chingaza	Cora	cora	Cora_sp	4.559288	-73.998915	Folioso
-Sample56	Cora 1	Paramo de Chingaza	Cora	cora	Cora_elephas	4.559288	-73.998915	Folioso
-Sample57	Cora pequeña	Paramo de Chingaza	Cora	cora	Cora_sp	4.559288	-73.998915	Folioso
-Sample58	Sticta impressula 2	Paramo de Chingaza	Sticta	impressula	Sticta_sylvatica	4.726904	-73.895894	Folioso
-Sample59	Sticta impressula 3	Paramo de Chingaza	Sticta	impressula	Sticta_sylvatica	4.729609	-73.893512	Folioso
-Sample60	Sticta humboldtii 3	Paramo de Chingaza	Sticta	humboldtii	Sticta_arachnofuliginosa	4.730593	-73.888845	Folioso
-Sample61	Sticta gyalocarpa 1	Paramo de Chingaza	Sticta	gyalocarpa	Sticta_gyalocarpa	4.729609	-73.893512	Folioso
-Sample62	Sustrato de Cora 1	Paramo de Chingaza	Sustrato	sustrato	Cora_elephas_sustrato	4.729609	-73.893512	Folioso
-Sample63	Sustrato de Sticta andina 2	Paramo de Chingaza	Sustrato	sustrato	Sticta_andina_sustrato	4.729609	-73.893512	Folioso
-Sample65	Sticta humboldtii 2	Paramo de Chingaza	Sticta	humboldtii	Sticta_arachnofuliginosa	4.726904	-73.895894	Folioso
-Sample66	Sticta andina 1	Paramo de Chingaza	Sticta	andina	Sticta_sp	4.723354	-73.895722	Folioso
-Sample67	Sticta impressula 1	Paramo de Chingaza	Sticta	impressula	Sticta_sylvatica	4.723354	-73.895722	Folioso
-Sample69	Sticta humbldtii 3	Paramo de Chingaza	Sticta	humboldtii	Sticta_arachnofuliginosa	4.729609	-73.893512	Folioso
-Sample70	Sticta andina 2	Paramo de Chingaza	Sticta	andina	Sticta_sp	4.726904	-73.895894	Folioso
-Sample71	Sticta humboldtii 1	Paramo de Chingaza	Sticta	humboldtii	Sticta_arachnofuliginosa	4.726904	-73.895894	Folioso
-Sample72	Cora 2	Paramo de Chingaza	Cora	cora	Cora_paraciferrii	4.726904	-73.895894	Folioso
-Sample74	Cora 4	Paramo de Chingaza	Cora	cora	Cora_davidia	4.726904	-73.895894	Folioso
-Sample75	Cora 9	Paramo de Chingaza	Cora	cora	Cora_paraciferrii	4.726904	-73.895894	Folioso
-Sample76	Cora 8	Paramo de Chingaza	Cora	cora	Cora_paraciferrii	4.726904	-73.895894	Folioso
-Sample77	Cora 3	Paramo de Chingaza	Cora	cora	Cora_paraciferrii	4.726904	-73.895894	Folioso
-Sample78	Stereocaulon tomentosum 3	Paramo de Chingaza	Stereocaulon	tomentosum	Stereocaulon_sp	4.726904	-73.895894	Fruticoso/Escamuloso
-Sample79	Stereocaulon tomentosum 1	Paramo de Chingaza	Stereocaulon	tomentosum	Stereocaulon_sp	4.726904	-73.895894	Fruticoso/Escamuloso
-Sample80	Stereocaulon ramulosum 2	Paramo de Chingaza	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.726904	-73.895894	Fruticoso/Escamuloso
-Sample81	Stereocaulon ramulosum 4	Paramo de Chingaza	Stereocaulon	ramulosum	Stereocaulon_sp	4.726904	-73.895894	Fruticoso/Escamuloso
-Sample83	Cora 7	Paramo de Chingaza	Cora	cora	Cora_paraciferrii	4.726904	-73.895894	Folioso
-Sample84	Cora 5	Paramo de Chingaza	Cora	cora	Cora_sp	4.726904	-73.895894	Folioso
-Sample85	Stereocaulon ramulosum 1	Paramo de Chingaza	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.726904	-73.895894	Fruticoso/Escamuloso
-Sample86	Stereocaulon ramulosum 5	Paramo de Chingaza	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.726904	-73.895894	Fruticoso/Escamuloso
-Sample88	Stereocaulon tomentosum 4	Paramo de Chingaza	Stereocaulon	tomentosum	Stereocaulon_sp	4.726904	-73.895894	Fruticoso/Escamuloso
-Sample89	Stereocaulon pomiferum 4	Volcan de Cerro Machin	Stereocaulon	pomiferum	Stereocaulon_atlanticum	4.486324	-75.390939	Fruticoso/Escamuloso
-Sample90	Stereocaulon aff. pomiferum 1	Volcan de Cerro Machin	Stereocaulon	pomiferum	Stereocaulon_atlanticum	4.486324	-75.390939	Fruticoso/Escamuloso
-Sample91	Stereocaulon ramulosum 2	Volcan de Cerro Machin	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.486324	-75.390939	Fruticoso/Escamuloso
-Sample92	Stereocaulon tomentosum 2	Volcan de Cerro Machin	Stereocaulon	tomentosum	Stereocaulon_atlanticum	4.486324	-75.390939	Fruticoso/Escamuloso
-Sample93	Stereocaulon ramulosum 1	Volcan de Cerro Machin	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.486324	-75.390939	Fruticoso/Escamuloso
-Sample95	Stereocaulon tomentosum 1	Volcan de Cerro Machin	Stereocaulon	tomentosum	Stereocaulon_atlanticum	4.486324	-75.390939	Fruticoso/Escamuloso
-Sample96	Stereocaulon ramulosum 3	Volcan de Cerro Machin	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.486324	-75.390939	Fruticoso/Escamuloso
-Sample97	Stereocaulon aff. pomiferum 2	Volcan de Cerro Machin	Stereocaulon	pomiferum	Stereocaulon_atlanticum	4.486324	-75.390939	Fruticoso/Escamuloso
-Sample99	Stereocaulon pomiferum 3	Volcan de Cerro Machin	Stereocaulon	pomiferum	Stereocaulon_atlanticum	4.486324	-75.390939	Fruticoso/Escamuloso
-Sample100	Stereocaulon tomentosum 4	Volcan de Cerro Machin	Stereocaulon	tomentosum	Stereocaulon_atlanticum	4.486324	-75.390939	Fruticoso/Escamuloso
-Sample101	Sticta andina 2	Volcan de Cerro Machin	Sticta	andina	Sticta_sp	4.486324	-75.390939	Folioso
-Sample103	Sticta andina 1	Volcan de Cerro Machin	Sticta	andina	Sticta_sp	4.486324	-75.390939	Folioso
-Sample105	Sticta humboldtii 1	Paramo de Sumapaz	Sticta	humboldtii	Sticta_arachnofuliginosa	4.327186	-74.207131	Folioso
-Sample106	Sticta humboldtii 2	Paramo de Sumapaz	Sticta	humboldtii	Sticta_arachnofuliginosa	4.327186	-74.207131	Folioso
-Sample107	Sticta humboldtii 4	Paramo de Sumapaz	Sticta	humboldtii	Sticta_macrofuliginosa	4.300793	-74.211337	Folioso
-Sample108	Sticta gyalocarpa 1	Paramo de Sumapaz	Sticta	gyalocarpa	Sticta_gyalocarpa	4.327186	-74.207131	Folioso
-Sample109	Sticta gyalocarpa 2	Paramo de Sumapaz	Sticta	gyalocarpa	Sticta_gyalocarpa	4.323409	-74.205844	Folioso
-Sample110	Sticta gyalocarpa 3	Paramo de Sumapaz	Sticta	gyalocarpa	Sticta_gyalocarpa	4.322795	-74.206467	Folioso
-Sample111	Sticta gyalocarpa 4	Paramo de Sumapaz	Sticta	gyalocarpa	Sticta_gyalocarpa	4.322795	-74.206467	Folioso
-Sample112	Sticta impressula 1	Paramo de Sumapaz	Sticta	impressula	Sticta_rhizinata	4.327186	-74.207131	Folioso
-Sample113	Sticta impressula 2	Paramo de Sumapaz	Sticta	impressula	Sticta_sylvatica	4.327186	-74.207131	Folioso
-Sample114	Sticta impressula 3	Paramo de Sumapaz	Sticta	impressula	Sticta_sylvatica	4.323409	-74.205844	Folioso
-Sample115	Sticta impressula 4	Paramo de Sumapaz	Sticta	impressula	Sticta_sylvatica	4.322795	-74.206467	Folioso
-Sample116	Cora 1	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.322795	-74.206467	Folioso
-Sample117	Cora 2	Paramo de Sumapaz	Cora	cora	Cora_sp	4.322795	-74.206467	Folioso
-Sample118	Cora 3	Paramo de Sumapaz	Cora	cora	Cora_sp	4.322795	-74.206467	Folioso
-Sample119	Cora 4	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.322795	-74.206467	Folioso
-Sample120	Cora 5	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.322795	-74.206467	Folioso
-Sample121	Cora 6	Paramo de Sumapaz	Cora	cora	Cora_sp	4.322795	-74.206467	Folioso
-Sample122	Cora 7	Paramo de Sumapaz	Cora	cora	Cora_sp	4.322795	-74.206467	Folioso
-Sample123	Cora 8	Paramo de Sumapaz	Cora	cora	Cora_sp	4.322795	-74.206467	Folioso
-Sample124	Cora 9	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.322795	-74.206467	Folioso
-Sample125	Cora 10	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.322795	-74.206467	Folioso
-Sample129	Sticta andina 3	Volcan de Cerro Machin	Sticta	andina	Sticta_rhizinata	4.486324	-75.390939	Folioso
-Sample130	Sticta humboldtii 3	Paramo de Sumapaz	Sticta	humboldtii	Sticta_macrofuliginosa	4.300793	-74.211337	Folioso
-Sample135	Stereocaulon pomiferum 1	Paramo de Sumapaz	Stereocaulon	pomiferum	Stereocaulon_sp	4.300793	-74.211337	Fruticoso/Escamuloso
-Sample136	Stereocaulon pomiferum 2	Paramo de Sumapaz	Stereocaulon	pomiferum	Stereocaulon_sp	4.300793	-74.211337	Fruticoso/Escamuloso
-Sample137	Stereocaulon pomiferum 3	Paramo de Sumapaz	Stereocaulon	pomiferum	Stereocaulon_sp	4.300793	-74.211337	Fruticoso/Escamuloso
-Sample138	Stereocaulon pomiferum 4	Paramo de Sumapaz	Stereocaulon	pomiferum	Stereocaulon_atlanticum	4.300793	-74.211337	Fruticoso/Escamuloso
-Sample139	Stereocaulon ramulosum 1	Paramo de Sumapaz	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.300793	-74.211337	Fruticoso/Escamuloso
-Sample140	Stereocaulon ramulosum 2	Paramo de Sumapaz	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.300793	-74.211337	Fruticoso/Escamuloso
-Sample141	Stereocaulon ramulosum 3	Paramo de Sumapaz	Stereocaulon	ramulosum	Stereocaulon_sp	4.300793	-74.211337	Fruticoso/Escamuloso
-Sample142	Stereocaulon ramulosum 4	Paramo de Sumapaz	Stereocaulon	ramulosum	Stereocaulon_sp	4.300793	-74.211337	Fruticoso/Escamuloso
-Sample143	Stereocaulon tomentosum 1	Paramo de Sumapaz	Stereocaulon	tomentosum	Stereocaulon_sp	4.300793	-74.211337	Fruticoso/Escamuloso
-Sample144	Stereocaulon tomentosum 2	Paramo de Sumapaz	Stereocaulon	tomentosum	Stereocaulon_sp	4.300793	-74.211337	Fruticoso/Escamuloso
-Sample145	Stereocaulon tomentosum 3	Paramo de Sumapaz	Stereocaulon	tomentosum	Stereocaulon_sp	4.300793	-74.211337	Fruticoso/Escamuloso
-Sample146	Stereocaulon tomentosum 4	Paramo de Sumapaz	Stereocaulon	tomentosum	Stereocaulon_sp	4.300793	-74.211337	Fruticoso/Escamuloso
-Sample148	Sticta humboldtii 1	Paramo de Sumapaz	Sticta	humboldtii	Sticta_macrofuliginosa	4.313647	-74.207568	Folioso
-Sample149	Sticta humboldtii 2	Paramo de Sumapaz	Sticta	humboldtii	Sticta_macrofuliginosa	4.322795	-74.206467	Folioso
-Sample150	Sticta humboldtii 3	Paramo de Sumapaz	Sticta	humboldtii	Sticta_macrofuliginosa	4.322795	-74.206467	Folioso
-Sample151	Sticta humboldtii 4	Paramo de Sumapaz	Sticta	humboldtii	Sticta_macrofuliginosa	4.322795	-74.206467	Folioso
-Sample152	Sustrato de Sticta humboldtii 4	Paramo de Sumapaz	Sustrato	sustrato	Sticta_macrofuliginosa_sustrato	4.322795	-74.206467	Folioso
-Sample153	Sticta gyalocarpa 1	Paramo de Sumapaz	Sticta	gyalocarpa	Sticta_gyalocarpa	4.313647	-74.207568	Folioso
-Sample154	Sticta gyalocarpa 2	Paramo de Sumapaz	Sticta	gyalocarpa	Sticta_minutula	4.322795	-74.206467	Folioso
-Sample155	Sticta gyalocarpa 3	Paramo de Sumapaz	Sticta	gyalocarpa	Sticta_gyalocarpa	4.323409	-74.205844	Folioso
-Sample156	Sticta gyalocarpa 4	Paramo de Sumapaz	Sticta	gyalocarpa	Sticta_gyalocarpa	4.313647	-74.207568	Folioso
-Sample158	Sticta impressula 1	Paramo de Sumapaz	Sticta	impressula	Sticta_rhizinata	4.313647	-74.207568	Folioso
-Sample159	Sticta impressula 2	Paramo de Sumapaz	Sticta	impressula	Sticta_sylvatica	4.322795	-74.206467	Folioso
-Sample160	Sticta impressula 3	Paramo de Sumapaz	Sticta	impressula	Sticta_rhizinata	4.323409	-74.205844	Folioso
-Sample161	Sticta impressula 4	Paramo de Sumapaz	Sticta	impressula	Sticta_sp	4.323409	-74.205844	Folioso
-Sample163	Cora 11	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.323409	-74.205844	Folioso
-Sample164	Cora 12	Paramo de Sumapaz	Cora	cora	Cora_sp	4.323409	-74.205844	Folioso
-Sample165	Cora 13	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.323409	-74.205844	Folioso
-Sample166	Cora 14	Paramo de Sumapaz	Cora	cora	Cora_sp	4.323409	-74.205844	Folioso
-Sample167	Cora 15	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.323409	-74.205844	Folioso
-Sample168	Cora 16	Paramo de Sumapaz	Cora	cora	Cora_sp	4.323409	-74.205844	Folioso
-Sample169	Cora 17	Paramo de Sumapaz	Cora	cora	Cora_putumayensis	4.323409	-74.205844	Folioso
-Sample170	Cora 18	Paramo de Sumapaz	Cora	cora	Cora_celestinoa	4.323409	-74.205844	Folioso
-Sample171	Cora 19	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.323409	-74.205844	Folioso
-Sample172	Cora 20	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.323409	-74.205844	Folioso
+Sample1	Cora 5	Paramo del Verjon	Cora	cora	Cora_paraciferrii	4.55533	-73.99525	Folioso
+Sample4	Sticta impressula 2	Paramo del Verjon	Sticta	impressula	Sticta_sylvatica	4.55533	-73.99525	Folioso
+Sample5	Stereocaulon pomiferum 1	Paramo del Verjon	Stereocaulon	pomiferum	Stereocaulon_atlanticum	4.54783	-73.99619	Fruticoso/Escamuloso
+Sample8	Sticta andina 3	Paramo del Verjon	Sticta	andina	Sticta_sp	4.55781	-73.99769	Folioso
+Sample9	Cora 4	Paramo del Verjon	Cora	cora	Cora_paraciferrii	4.55561	-73.99528	Folioso
+Sample13	Stereocaulon ramulosum 2	Paramo del Verjon	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.54783	-73.99619	Fruticoso/Escamuloso
+Sample14	Sticta impressula 1	Paramo del Verjon	Sticta	impressula	Sticta_sylvatica	4.55481	-73.99442	Folioso
+Sample15	Sticta gyalocarpa 4	Paramo del Verjon	Sticta	gyalocarpa	Sticta_gyalocarpa	4.55944	-73.99894	Folioso
+Sample20	Sticta andina 1	Paramo del Verjon	Sticta	andina	Sticta_sp	4.55944	-73.99894	Folioso
+Sample21	Cora 2	Paramo del Verjon	Cora	cora	Cora_paraciferrii	4.55781	-73.99769	Folioso
+Sample22	Sticta gyalocarpa 3	Paramo del Verjon	Sticta	gyalocarpa	Sticta_gyalocarpa	4.55944	-73.99894	Folioso
+Sample23	Cora 3	Paramo del Verjon	Cora	cora	Cora_paraciferrii	4.55561	-73.99528	Folioso
+Sample26	Stereocaulon ramulosum 1	Paramo del Verjon	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.54783	-73.99619	Fruticoso/Escamuloso
+Sample27	Stereocaulon sp.	Paramo del Verjon	Stereocaulon	stereocaulon	Stereocaulon_atlanticum	4.54783	-73.99619	Fruticoso/Escamuloso
+Sample28	Stereocaulon ramulosum 4	Paramo del Verjon	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.54783	-73.99619	Fruticoso/Escamuloso
+Sample29	Sticta gyalocarpa 5	Paramo del Verjon	Sticta	gyalocarpa	Sticta_gyalocarpa	4.55944	-73.99894	Folioso
+Sample30	Sticta impressula 3	Paramo del Verjon	Sticta	impressula	Sticta_sylvatica	4.55533	-73.99525	Folioso
+Sample31	Sticta andina 2	Paramo del Verjon	Sticta	andina	Sticta_sp	4.55944	-73.99894	Folioso
+Sample32	Sustrato de Cora 5	Paramo del Verjon	Sustrato	sustrato	Cora_paraciferrii_sustrato	4.55533	-73.99525	Folioso
+Sample33	Cora 8	Paramo del Verjon	Cora	cora	Cora_paraciferrii	4.55481	-73.99442	Folioso
+Sample34	Cora 6	Paramo del Verjon	Cora	cora	Cora_paraciferrii	4.55533	-73.99525	Folioso
+Sample35	Cora 7	Paramo del Verjon	Cora	cora	Cora_paraciferrii	4.55481	-73.99442	Folioso
+Sample37	Sticta humboldtii 4	Paramo del Verjon	Sticta	humboldtii	Sticta_arachnofuliginosa	4.55533	-73.99525	Folioso
+Sample38	Sticta gyalocarpa 2	Paramo del Verjon	Sticta	gyalocarpa	Sticta_gyalocarpa	4.55944	-73.99894	Folioso
+Sample39	Sticta gyalocarpa 1	Paramo del Verjon	Sticta	gyalocarpa	Sticta_gyalocarpa	4.55944	-73.99894	Folioso
+Sample40	Sticta humboldtii 1	Paramo del Verjon	Sticta	humboldtii	Sticta_arachnofuliginosa	4.55533	-73.99525	Folioso
+Sample41	Sticta humboldtii 2	Paramo del Verjon	Sticta	humboldtii	Sticta_arachnofuliginosa	4.55533	-73.99525	Folioso
+Sample42	Sticta humboldtii 3	Paramo del Verjon	Sticta	humboldtii	Sticta_arachnofuliginosa	4.55533	-73.99525	Folioso
+Sample43	Sustrato de Sticta humboldtii 1	Paramo del Verjon	Sustrato	sustrato	Sticta_arachnofuliginosa_sustrato	4.55533	-73.99525	Folioso
+Sample45	Stereocaulon ramulosum 5	Paramo del Verjon	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.54783	-73.99619	Fruticoso/Escamuloso
+Sample47	Cora 1	Paramo del Verjon	Cora	cora	Cora_paraciferrii	4.55781	-73.99769	Folioso
+Sample49	Stereocaulon tomentosum 2	Paramo del Verjon	Stereocaulon	tomentosum	Stereocaulon_sp	4.54783	-73.99619	Fruticoso/Escamuloso
+Sample51	Stereocaulon ramulosum 3	Paramo de Chingaza	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.73161	-73.89019	Fruticoso/Escamuloso
+Sample54	Stereocaulon tomentosum 2	Paramo de Chingaza	Stereocaulon	tomentosum	Stereocaulon_atlanticum	4.73225	-73.89128	Fruticoso/Escamuloso
+Sample55	Cora 6	Paramo de Chingaza	Cora	cora	Cora_sp	4.73164	-73.88367	Folioso
+Sample56	Cora 1	Paramo de Chingaza	Cora	cora	Cora_elephas	4.72994	-73.89600	Folioso
+Sample57	Cora pequena	Paramo de Chingaza	Cora	cora	Cora_sp	4.72994	-73.89600	Folioso
+Sample58	Sticta impressula 2	Paramo de Chingaza	Sticta	impressula	Sticta_sylvatica	4.73081	-73.89189	Folioso
+Sample59	Sticta impressula 3	Paramo de Chingaza	Sticta	impressula	Sticta_sylvatica	4.73161	-73.89019	Folioso
+Sample60	Sticta humboldtii 3	Paramo de Chingaza	Sticta	humboldtii	Sticta_arachnofuliginosa	4.73225	-73.89128	Folioso
+Sample61	Sticta gyalocarpa 1	Paramo de Chingaza	Sticta	gyalocarpa	Sticta_gyalocarpa	4.73278	-73.89206	Folioso
+Sample62	Sustrato de Cora 1	Paramo de Chingaza	Sustrato	sustrato	Cora_elephas_sustrato	4.72994	-73.89600	Folioso
+Sample63	Sustrato de Sticta andina 2	Paramo de Chingaza	Sustrato	sustrato	Sticta_andina_sustrato	4.73081	-73.89189	Folioso
+Sample65	Sticta humboldtii 2	Paramo de Chingaza	Sticta	humboldtii	Sticta_arachnofuliginosa	4.73278	-73.89206	Folioso
+Sample66	Sticta andina 1	Paramo de Chingaza	Sticta	andina	Sticta_sp	4.72994	-73.89600	Folioso
+Sample67	Sticta impressula 1	Paramo de Chingaza	Sticta	impressula	Sticta_sylvatica	4.72994	-73.89600	Folioso
+Sample69	Sticta humbldtii 3	Paramo de Chingaza	Sticta	humboldtii	Sticta_arachnofuliginosa	4.73139	-73.89186	Folioso
+Sample70	Sticta andina 2	Paramo de Chingaza	Sticta	andina	Sticta_sp	4.73081	-73.89189	Folioso
+Sample71	Sticta humboldtii 1	Paramo de Chingaza	Sticta	humboldtii	Sticta_arachnofuliginosa	4.73278	-73.89206	Folioso
+Sample72	Cora 2	Paramo de Chingaza	Cora	cora	Cora_paraciferrii	4.72994	-73.89600	Folioso
+Sample74	Cora 4	Paramo de Chingaza	Cora	cora	Cora_davidia	4.73225	-73.89128	Folioso
+Sample75	Cora 9	Paramo de Chingaza	Cora	cora	Cora_paraciferrii	4.73164	-73.88367	Folioso
+Sample76	Cora 8	Paramo de Chingaza	Cora	cora	Cora_paraciferrii	4.73164	-73.88367	Folioso
+Sample77	Cora 3	Paramo de Chingaza	Cora	cora	Cora_paraciferrii	4.73081	-73.89189	Folioso
+Sample78	Stereocaulon tomentosum 3	Paramo de Chingaza	Stereocaulon	tomentosum	Stereocaulon_sp	4.73081	-73.89189	Fruticoso/Escamuloso
+Sample79	Stereocaulon tomentosum 1	Paramo de Chingaza	Stereocaulon	tomentosum	Stereocaulon_sp	4.72994	-73.89600	Fruticoso/Escamuloso
+Sample80	Stereocaulon ramulosum 2	Paramo de Chingaza	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.73161	-73.89019	Fruticoso/Escamuloso
+Sample81	Stereocaulon ramulosum 4	Paramo de Chingaza	Stereocaulon	ramulosum	Stereocaulon_sp	4.73225	-73.89128	Fruticoso/Escamuloso
+Sample83	Cora 7	Paramo de Chingaza	Cora	cora	Cora_paraciferrii	4.73164	-73.88367	Folioso
+Sample84	Cora 5	Paramo de Chingaza	Cora	cora	Cora_sp	4.73164	-73.88367	Folioso
+Sample85	Stereocaulon ramulosum 1	Paramo de Chingaza	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.73225	-73.89128	Fruticoso/Escamuloso
+Sample86	Stereocaulon ramulosum 5	Paramo de Chingaza	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.73225	-73.89128	Fruticoso/Escamuloso
+Sample88	Stereocaulon tomentosum 4	Paramo de Chingaza	Stereocaulon	tomentosum	Stereocaulon_sp	4.73161	-73.89019	Fruticoso/Escamuloso
+Sample89	Stereocaulon pomiferum 4	Volcan de Cerro Machin	Stereocaulon	pomiferum	Stereocaulon_atlanticum	4.49383	-75.38572	Fruticoso/Escamuloso
+Sample90	Stereocaulon aff. pomiferum 1	Volcan de Cerro Machin	Stereocaulon	pomiferum	Stereocaulon_atlanticum	4.49278	-75.39333	Fruticoso/Escamuloso
+Sample91	Stereocaulon ramulosum 2	Volcan de Cerro Machin	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.49278	-75.39333	Fruticoso/Escamuloso
+Sample92	Stereocaulon tomentosum 2	Volcan de Cerro Machin	Stereocaulon	tomentosum	Stereocaulon_atlanticum	4.49222	-75.39383	Fruticoso/Escamuloso
+Sample93	Stereocaulon ramulosum 1	Volcan de Cerro Machin	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.49222	-75.39383	Fruticoso/Escamuloso
+Sample95	Stereocaulon tomentosum 1	Volcan de Cerro Machin	Stereocaulon	tomentosum	Stereocaulon_atlanticum	4.49222	-75.39383	Fruticoso/Escamuloso
+Sample96	Stereocaulon ramulosum 3	Volcan de Cerro Machin	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.49319	-75.38472	Fruticoso/Escamuloso
+Sample97	Stereocaulon aff. pomiferum 2	Volcan de Cerro Machin	Stereocaulon	pomiferum	Stereocaulon_atlanticum	4.49383	-75.38572	Fruticoso/Escamuloso
+Sample99	Stereocaulon pomiferum 3	Volcan de Cerro Machin	Stereocaulon	pomiferum	Stereocaulon_atlanticum	4.49189	-75.38422	Fruticoso/Escamuloso
+Sample100	Stereocaulon tomentosum 4	Volcan de Cerro Machin	Stereocaulon	tomentosum	Stereocaulon_atlanticum	4.49278	-75.39333	Fruticoso/Escamuloso
+Sample101	Sticta andina 2	Volcan de Cerro Machin	Sticta	andina	Sticta_sp	4.49469	-75.38811	Folioso
+Sample103	Sticta andina 1	Volcan de Cerro Machin	Sticta	andina	Sticta_sp	4.49439	-75.38950	Folioso
+Sample105	Sticta humboldtii 1	Paramo de Sumapaz	Sticta	humboldtii	Sticta_arachnofuliginosa	4.32342	-74.20583	Folioso
+Sample106	Sticta humboldtii 2	Paramo de Sumapaz	Sticta	humboldtii	Sticta_arachnofuliginosa	4.32342	-74.20583	Folioso
+Sample107	Sticta humboldtii 4	Paramo de Sumapaz	Sticta	humboldtii	Sticta_macrofuliginosa	4.30081	-74.21133	Folioso
+Sample108	Sticta gyalocarpa 1	Paramo de Sumapaz	Sticta	gyalocarpa	Sticta_gyalocarpa	4.32342	-74.20583	Folioso
+Sample109	Sticta gyalocarpa 2	Paramo de Sumapaz	Sticta	gyalocarpa	Sticta_gyalocarpa	4.32342	-74.20583	Folioso
+Sample110	Sticta gyalocarpa 3	Paramo de Sumapaz	Sticta	gyalocarpa	Sticta_gyalocarpa	4.32281	-74.20647	Folioso
+Sample111	Sticta gyalocarpa 4	Paramo de Sumapaz	Sticta	gyalocarpa	Sticta_gyalocarpa	4.32281	-74.20647	Folioso
+Sample112	Sticta impressula 1	Paramo de Sumapaz	Sticta	impressula	Sticta_rhizinata	4.32342	-74.20583	Folioso
+Sample113	Sticta impressula 2	Paramo de Sumapaz	Sticta	impressula	Sticta_sylvatica	4.32342	-74.20583	Folioso
+Sample114	Sticta impressula 3	Paramo de Sumapaz	Sticta	impressula	Sticta_sylvatica	4.32342	-74.20583	Folioso
+Sample115	Sticta impressula 4	Paramo de Sumapaz	Sticta	impressula	Sticta_sylvatica	4.32281	-74.20647	Folioso
+Sample116	Cora 1	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.32342	-74.20583	Folioso
+Sample117	Cora 2	Paramo de Sumapaz	Cora	cora	Cora_sp	4.32342	-74.20583	Folioso
+Sample118	Cora 3	Paramo de Sumapaz	Cora	cora	Cora_sp	4.32342	-74.20583	Folioso
+Sample119	Cora 4	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.32281	-74.20647	Folioso
+Sample120	Cora 5	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.32281	-74.20647	Folioso
+Sample121	Cora 6	Paramo de Sumapaz	Cora	cora	Cora_sp	4.32281	-74.20647	Folioso
+Sample122	Cora 7	Paramo de Sumapaz	Cora	cora	Cora_sp	4.31364	-74.20756	Folioso
+Sample123	Cora 8	Paramo de Sumapaz	Cora	cora	Cora_sp	4.31364	-74.20756	Folioso
+Sample124	Cora 9	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.30081	-74.21133	Folioso
+Sample125	Cora 10	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.30081	-74.21133	Folioso
+Sample129	Sticta andina 3	Volcan de Cerro Machin	Sticta	andina	Sticta_rhizinata	4.48703	-75.38069	Folioso
+Sample130	Sticta humboldtii 3	Paramo de Sumapaz	Sticta	humboldtii	Sticta_macrofuliginosa	4.30081	-74.21133	Folioso
+Sample135	Stereocaulon pomiferum 1	Paramo de Sumapaz	Stereocaulon	pomiferum	Stereocaulon_sp	4.32342	-74.20583	Fruticoso/Escamuloso
+Sample136	Stereocaulon pomiferum 2	Paramo de Sumapaz	Stereocaulon	pomiferum	Stereocaulon_sp	4.32342	-74.20583	Fruticoso/Escamuloso
+Sample137	Stereocaulon pomiferum 3	Paramo de Sumapaz	Stereocaulon	pomiferum	Stereocaulon_sp	4.31364	-74.20756	Fruticoso/Escamuloso
+Sample138	Stereocaulon pomiferum 4	Paramo de Sumapaz	Stereocaulon	pomiferum	Stereocaulon_atlanticum	4.30081	-74.21133	Fruticoso/Escamuloso
+Sample139	Stereocaulon ramulosum 1	Paramo de Sumapaz	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.32342	-74.20583	Fruticoso/Escamuloso
+Sample140	Stereocaulon ramulosum 2	Paramo de Sumapaz	Stereocaulon	ramulosum	Stereocaulon_atlanticum	4.32342	-74.20583	Fruticoso/Escamuloso
+Sample141	Stereocaulon ramulosum 3	Paramo de Sumapaz	Stereocaulon	ramulosum	Stereocaulon_sp	4.32281	-74.20647	Fruticoso/Escamuloso
+Sample142	Stereocaulon ramulosum 4	Paramo de Sumapaz	Stereocaulon	ramulosum	Stereocaulon_sp	4.32281	-74.20647	Fruticoso/Escamuloso
+Sample143	Stereocaulon tomentosum 1	Paramo de Sumapaz	Stereocaulon	tomentosum	Stereocaulon_sp	4.32342	-74.20583	Fruticoso/Escamuloso
+Sample144	Stereocaulon tomentosum 2	Paramo de Sumapaz	Stereocaulon	tomentosum	Stereocaulon_sp	4.32281	-74.20647	Fruticoso/Escamuloso
+Sample145	Stereocaulon tomentosum 3	Paramo de Sumapaz	Stereocaulon	tomentosum	Stereocaulon_sp	4.32281	-74.20647	Fruticoso/Escamuloso
+Sample146	Stereocaulon tomentosum 4	Paramo de Sumapaz	Stereocaulon	tomentosum	Stereocaulon_sp	4.31364	-74.20756	Fruticoso/Escamuloso
+Sample148	Sticta humboldtii 1	Paramo de Sumapaz	Sticta	humboldtii	Sticta_macrofuliginosa	4.31364	-74.20756	Folioso
+Sample149	Sticta humboldtii 2	Paramo de Sumapaz	Sticta	humboldtii	Sticta_macrofuliginosa	4.32281	-74.20647	Folioso
+Sample150	Sticta humboldtii 3	Paramo de Sumapaz	Sticta	humboldtii	Sticta_macrofuliginosa	4.32281	-74.20647	Folioso
+Sample151	Sticta humboldtii 4	Paramo de Sumapaz	Sticta	humboldtii	Sticta_macrofuliginosa	4.32281	-74.20647	Folioso
+Sample152	Sustrato de Sticta humboldtii 4	Paramo de Sumapaz	Sustrato	sustrato	Sticta_macrofuliginosa_sustrato	4.32281	-74.20647	Folioso
+Sample153	Sticta gyalocarpa 1	Paramo de Sumapaz	Sticta	gyalocarpa	Sticta_gyalocarpa	4.31364	-74.20756	Folioso
+Sample154	Sticta gyalocarpa 2	Paramo de Sumapaz	Sticta	gyalocarpa	Sticta_minutula	4.32281	-74.20647	Folioso
+Sample155	Sticta gyalocarpa 3	Paramo de Sumapaz	Sticta	gyalocarpa	Sticta_gyalocarpa	4.32342	-74.20583	Folioso
+Sample156	Sticta gyalocarpa 4	Paramo de Sumapaz	Sticta	gyalocarpa	Sticta_gyalocarpa	4.31364	-74.20756	Folioso
+Sample158	Sticta impressula 1	Paramo de Sumapaz	Sticta	impressula	Sticta_rhizinata	4.31364	-74.20756	Folioso
+Sample159	Sticta impressula 2	Paramo de Sumapaz	Sticta	impressula	Sticta_sylvatica	4.32281	-74.20647	Folioso
+Sample160	Sticta impressula 3	Paramo de Sumapaz	Sticta	impressula	Sticta_rhizinata	4.32342	-74.20583	Folioso
+Sample161	Sticta impressula 4	Paramo de Sumapaz	Sticta	impressula	Sticta_sp	4.32342	-74.20583	Folioso
+Sample163	Cora 11	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.30081	-74.21133	Folioso
+Sample164	Cora 12	Paramo de Sumapaz	Cora	cora	Cora_sp	4.30081	-74.21133	Folioso
+Sample165	Cora 13	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.30081	-74.21133	Folioso
+Sample166	Cora 14	Paramo de Sumapaz	Cora	cora	Cora_sp	4.31364	-74.20756	Folioso
+Sample167	Cora 15	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.31364	-74.20756	Folioso
+Sample168	Cora 16	Paramo de Sumapaz	Cora	cora	Cora_sp	4.32281	-74.20647	Folioso
+Sample169	Cora 17	Paramo de Sumapaz	Cora	cora	Cora_putumayensis	4.32281	-74.20647	Folioso
+Sample170	Cora 18	Paramo de Sumapaz	Cora	cora	Cora_celestinoa	4.32281	-74.20647	Folioso
+Sample171	Cora 19	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.32342	-74.20583	Folioso
+Sample172	Cora 20	Paramo de Sumapaz	Cora	cora	Cora_paraciferrii	4.32342	-74.20583	Folioso

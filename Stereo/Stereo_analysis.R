@@ -128,7 +128,12 @@ ps.stereo <- subset_samples(physeq.ste, sample.id %in% st.atlanticus)
 
 #Longitude and latitude
 
-sample_ste <- sample.data.frame(ps.stereo) 
+sample_ste <- ps.stereo %>% sample.data.frame() %>%
+              arrange(site)
+
+#Join this to phyloseq object
+
+
 cord_table <- data.frame(Sample.id= sample_ste$sample.id, 
                          Longitude=sample_ste$longitude,
                          Latitude= sample_ste$latitude) %>%
@@ -139,13 +144,15 @@ cord_table <- data.frame(Sample.id= sample_ste$sample.id,
 dist.geo <- distm(cord_table, fun = distHaversine)
 rownames(dist.geo) <- sample_ste$sample.id
 colnames(dist.geo) <- sample_ste$sample.id
+#dist.geo <- dist.geo/1000
 dist.geo <- as.matrix(dist.geo)
 
 #Abundance matrix with bray-curtis
-br.dist.stereo <- ps.stereo %>%
-  dist_calc(dist = "bray", binary = TRUE)
+
+br.dist.stereo <- ps.stereo %>% dist_calc(dist = "bray", binary = TRUE)
 
 df.dist.br <- br.dist.stereo@dist %>% as.matrix()
+df.dist.br <- df.dist.br[sample_ste$sample.id, sample_ste$sample.id]
 
 ## Calculate mantel test for both matrices
 
@@ -153,71 +160,100 @@ df.dist.br <- br.dist.stereo@dist %>% as.matrix()
 abund_geo  <- mantel(df.dist.br, dist.geo, method = "spearman", permutations = 9999, na.rm = TRUE)
 abund_geo
 
-#library(MASS)
-#write.matrix(dist.geo, file ="geospatial_dist_matrix.txt")
 
-geo.long <- dist.geo %>%
-  as_tibble(rownames = "A") %>%
-  pivot_longer(-A, names_to = "B", values_to = "geo_dist")
+## Correlogram of matrices
 
-#write.matrix(df.dist.br, file ="Bray_Curtis_matrix.txt")
+library(ComplexHeatmap)
+library(circlize)
+library(pheatmap)
 
-br.long <- df.dist.br %>%
-  as_tibble(rownames = "A") %>%
-  pivot_longer(-A, names_to = "B", values_to = "bray")
+# Generate annotations
+anot_bottom <- HeatmapAnnotation(Collection_site = sample_ste$site, 
+                                 col = list(Collection_site = c("Paramo de Chingaza" ="#1B9E77",
+                                                                "Paramo de Sumapaz" = "#E6F598",
+                                                                "Paramo del Verjon" = "#CA9822",
+                                                                "Volcan de Cerro Machin" = "#351B9E")))
+anot_right <- rowAnnotation(Collection_site = sample_ste$site, 
+                            show_annotation_name = FALSE,
+                            show_legend = FALSE,
+                            col = list(Collection_site = c("Paramo de Chingaza" ="#1B9E77",
+                                                           "Paramo de Sumapaz" = "#E6F598",
+                                                           "Paramo del Verjon" = "#CA9822",
+                                                           "Volcan de Cerro Machin" = "#351B9E")))
 
-## Plot correlation
-sample_ste$A <- sample_ste$sample.id
-sample_ste$B <- sample_ste$sample.id
-df.geo.plot <- cbind(geo.long, bray.c = br.long$bray)
-df.geo.plot$geo_dist <- df.geo.plot$geo_dist/1000  # Distance to Km
-# Include collection site A 
-df.geo.plot <- merge(df.geo.plot, 
-                     sample_ste[, c("A", "site")],
-                     by = "A", 
-                     all.x = TRUE)
-#Change rownames
-colnames(df.geo.plot) <- c("A", "B", "geo_dist", "bray.c", "site_A")
+### Correlation plot
 
-# Include collection site B
-df.geo.plot <- merge(df.geo.plot, 
-                     sample_ste[, c("B", "site")],
-                     by = "B", 
-                     all.x = TRUE)
-#Change rownames
-colnames(df.geo.plot) <- c("A", "B", "geo_dist", "bray.c", "site_A", "site_B")
+cor_geo_bray <- cor(df.dist.br,dist.geo)
 
-#Merge comparison sites
-df.geo.plot$sites_comparison <- paste(df.geo.plot$site_A,"-",df.geo.plot$site_B)
-df.geo.plot <- df.geo.plot[, !(names(df.geo.plot) %in% c("site_A", "site_B"))]
-write.table(df.geo.plot, "Stereo/Geographical_dist_df.txt", sep = "\t", row.names = FALSE)
+# Correlation plot
+nm <- rownames(cor_geo_bray)
 
-# Visualization
-pdf("Stereo/Correlation_geo.pdf",
-    width = 10,
-    height = 5)
+# Color pallete
+col_fun = circlize::colorRamp2(c(-1, 0, 1), c("#ffa500", "white", "#00a06d"))
 
-cmap = c("#7F3B08", "#33A02C", "#E08214", 
-         "#E6F598", "#FEE0B6", "#D8DAEB", 
-         "#B2ABD2", "#ABDDA4", "#542788", 
-         "#2D004B", "#9E0142", "#D53E4F",
-         "#C7EAE5", "#01665E", "#3288BD",
-         "#66C2A5", "#5E4FA2" ) 
 
-df.geo.plot %>%
-  #filter(sample.id < B) %>%
-  ggplot(aes(x=geo_dist, y=bray.c, color = sites_comparison)) +
-  geom_point() +
-  scale_color_manual(values = cmap) +
-  theme_classic() +
-  ylab("Bray-Curtis") + 
-  xlab("Haversine distance (Km)") +
-  ggtitle("Stereocaulon Atlanticum") +
-  labs(color = "Collection sites comparison") +
-  geom_smooth(method='lm',formula=y~x, se = TRUE) 
+pdf("Stereo/Corplot_geo_bray.pdf",
+    width = 12,
+    height = 8)
+
+Heatmap(cor_geo_bray, name = "Correlation", 
+        col = col_fun, 
+        rect_gp = gpar(type = "none"), 
+        bottom_annotation = anot_bottom,
+        right_annotation = anot_right,
+        cell_fun = function(j, i, x, y, width, height, fill) {
+          grid.rect(x = x, y = y, width = width, height = height, 
+                    gp = gpar(col = "grey", fill = NA))
+          if(i > j) {
+            grid.circle(x = x, y = y, r = abs(cor_geo_bray[i, j])/2 * min(unit.c(width, height)), 
+                        gp = gpar(fill = col_fun(cor_geo_bray[i, j]), col = NA))
+          } else {
+            grid.text(sprintf("%.1f", cor_geo_bray[i, j]), x, y, gp = gpar(fontsize = 10))
+          }
+        }, cluster_rows = FALSE, cluster_columns = FALSE,
+        show_row_names = FALSE, show_column_names = FALSE)
 
 dev.off()
 
-# Model for the association
-model.stereo <- lm(bray.c ~ geo_dist, data = df.geo.plot)
-summary <- summary(model.stereo)
+
+## PCoA
+
+library(ape)
+library(vegan)
+
+# Order the rows and columns
+od <- hclust(dist(df.dist.br))$order
+m2 <- df.dist.br[od, od]
+ordination <- pcoa(m2, correction = "none")
+scores <- as.data.frame(ordination$vectors[,1:2]) %>% rownames_to_column(var = "sample.id")
+proportion_exp <- ordination$values$Relative_eig[1:2]
+
+#Join metadata to coordinates
+atlan.bray <- merge(scores, sample_ste[,c("sample.id","site")], 
+                     by = "sample.id", all.x = TRUE)
+
+# Set colors
+col = c("#1B9E77","#E6F598","#CA9822", "#351B9E")
+
+pdf("Stereo/PCoA_stereo_atlanticum.pdf",
+    width = 8,
+    height = 5)
+
+atlan.bray %>% 
+  ggplot(aes(Axis.1, Axis.2)) +
+  geom_point(aes(fill = site), size = 3, pch = 21, color = "black") +
+  geom_hline(yintercept = 0, linetype = "dotted") +  # Add horizontal line at y = 0
+  geom_vline(xintercept = 0, linetype = "dotted") +  # Add vertical line at x = 0
+  scale_fill_manual(values = col, name = "Collection site") +
+  theme_minimal() +
+  scale_size(guide = "none") +  # Remove legend
+  labs(x = paste0("Axis 1 (", round(proportion_exp[1] * 100), "%)"),  # Adjusted axis labels with percentages
+       y = paste0("Axis 2 (", round(proportion_exp[2] * 100), "%)"),  # Adjusted axis labels with percentages
+       title = "PCoA Stereocaulon atlanticum") +  # Improved title
+  theme(axis.title = element_text(size = 12),  # Increased size of axis labels
+        plot.title = element_text(size = 14, face = "bold"),
+        panel.border = element_rect(color = "black", fill = NA, size = 1))  # Increased size and bold title
+
+dev.off()
+
+
