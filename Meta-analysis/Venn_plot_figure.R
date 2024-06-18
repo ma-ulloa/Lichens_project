@@ -110,11 +110,11 @@ venn_lichen <- list(Cora = Co, Sticta = St, Stereocaulon = S)
 ##Calculate overlap
 overlap <- VennDiagram::calculate.overlap(venn_lichen)
 
-#Join areas to taxonomyfile
-share.asv <- data.frame(sample = overlap$a5) %>% left_join(tx_ps_new, share.asv, by= "sample")
-sticta.unique <- data.frame(sample = overlap$a3) %>% left_join(tx_ps_new, share.asv, by= "sample")
-cora.unique <- data.frame(sample = overlap$a1) %>% left_join(tx_ps_new, share.asv, by= "sample")
-stereo.unique <- data.frame(sample = overlap$a7) %>% left_join(tx_ps_new, share.asv, by= "sample")
+#Join areas to taxonomy file
+share.asv <- data.frame(Taxon = overlap$a5) %>% left_join(tx_ps_new, share.asv, by= "Taxon")
+sticta.unique <- data.frame(Taxon = overlap$a3) %>% left_join(tx_ps_new, share.asv, by= "Taxon")
+cora.unique <- data.frame(Taxon = overlap$a1) %>% left_join(tx_ps_new, share.asv, by= "Taxon")
+stereo.unique <- data.frame(Taxon = overlap$a7) %>% left_join(tx_ps_new, share.asv, by= "Taxon")
 
 
 library("ggvenn")
@@ -130,5 +130,30 @@ pdf(file = venn.plot,   # The directory you want to save the file in
 ggvenn(venn_lichen, 
        fill_color = c("#1B9E77", "#7570B3", "#D95F02", "#CD534CFF"),
        stroke_size = 0.6, set_name_size = 4)
+
+dev.off()
+
+### Using euler for proportinal elipses to numerical values
+
+library(eulerr)
+
+fit <- euler(c("Sticta" = 178, "Stereocaulon" = 103, "Cora" = 55, 
+               "Sticta&Stereocaulon" = 76, "Sticta&Cora" = 78, 
+               "Stereocaulon&Cora" = 18, "Sticta&Stereocaulon&Cora" = 122),
+             shape = "ellipse")
+
+venn.plot.elipse <- "Meta-analysis/Venn-plot-elipse.pdf"
+
+
+pdf(file = venn.plot.elipse,   # The directory you want to save the file in
+    width = 6, # The width of the plot in inches
+    height = 6) # The height of the plot in inches
+
+plot(fit,
+     fills = c("#7570B3","#D95F02","#1B9E77"),
+     edges = TRUE,
+     fontsize = 8,
+     transparency = TRUE,
+     quantities = list(fontsize = 10))
 
 dev.off()
