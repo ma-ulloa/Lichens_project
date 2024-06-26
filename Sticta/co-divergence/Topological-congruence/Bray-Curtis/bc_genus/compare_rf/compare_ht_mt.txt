@@ -1,2 +1,0 @@
-Tree	R-F	R-F_toYuleAvg	R-F_toUnifAvg
-1	1.0000	1.4184	1.4514

@@ -1,11 +1,10 @@
 
 #title: "Genus_Sticta"
 #author: "Alejandra Ulloa"
-#date: 'December 2023'
 
 #This script was used to analyze samples of the genus Cora
 
-#Load packages to be use
+# Load packages to be use
 
 library(phyloseq)
 library(data.table)
@@ -30,7 +29,7 @@ library(tidyverse)
 load("Lichens_clean.RData")
 
 
-# Keep only Stereocaulon genus in Phyloseq object
+# Keep only samples corresponding to the Cora genus in Phyloseq object
 physeq.cora <-  subset_samples(ps.rarefied, host_genus == "Cora")
 
 ########### ALPHA DIVERSITY #################
@@ -51,16 +50,18 @@ data_alphadiv <- cbind(meta_cora, t(data_richness), data_shannon, data_evenness)
 rm(data_richness, data_evenness, data_shannon)                                  # remove the unnecessary data/vector
 
 
-#Ditch species with only one sample
-data_alphadiv <- data_alphadiv[-c(17,18,30),]
+#Compile species with only one sample
+
+data_alphadiv <- data_alphadiv %>%
+  mutate(new_species = if_else(species.checked == "Cora paraciferrii", species.checked, "Cora_sp"))
 
 
 # Visualization
 col_alp <- RColorBrewer::brewer.pal(2, "Dark2") 
 
-P1 <- ggplot(data_alphadiv, aes(x=host_species_ITS, y=S.chao1)) +
+P1 <- ggplot(data_alphadiv, aes(x=new_species, y=S.chao1)) +
       geom_boxplot() +
-      labs(title= 'Chao1', x= ' ', y= '', tag = "A") +
+      labs(title= '', x= ' ', y= 'Chao1', tag = "A") +
       geom_signif(comparisons = list(c("Cora_paraciferrii", "Cora_sp")),
               map_signif_level = TRUE,
               textsize = 4,
@@ -70,9 +71,9 @@ P1 <- ggplot(data_alphadiv, aes(x=host_species_ITS, y=S.chao1)) +
       geom_point() + 
       theme_classic()
 
-P2 <- ggplot(data_alphadiv, aes(x=host_species_ITS, y=data_shannon)) +
+P2 <- ggplot(data_alphadiv, aes(x=new_species, y=data_shannon)) +
   geom_boxplot() +
-  labs(title= 'Shannon', x= ' ', y= '', tag = "B") +
+  labs(title= '', x= ' ', y= 'Shannon', tag = "B") +
   geom_signif(comparisons = list(c("Cora_paraciferrii", "Cora_sp")),
               map_signif_level = TRUE,
               textsize = 4,
@@ -95,8 +96,8 @@ dev.off()
 
 ## Stats Alpha-D
 
-anova.site = aov(data_shannon ~ host_species_ITS, data = data_alphadiv)
+anova.site = aov(data_shannon ~ new_species, data = data_alphadiv)
 TukeyHSD(anova.site)
 
-anova.site.chao = aov(S.chao1 ~ host_species_ITS, data = data_alphadiv)
+anova.site.chao = aov(S.chao1 ~ new_species, data = data_alphadiv)
 TukeyHSD(anova.site.chao)

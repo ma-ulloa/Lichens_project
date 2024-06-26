@@ -13,50 +13,45 @@ library(stats)
 library(phangorn)
 library(phytools)
 library(colorspace)
+library(castor)
 
-
-# 1. MANTEL TEST
-
-# Generate ITS phylogeny distance matrix using 
-# cophenetic.phylo function from the ape package
 
 # Load the phylogenetic tree of the Sticta genus
-tree.st <- read.tree("Sticta/co-divergence/Sticta-phylogeny/ht.newick")
+tree.st <- read.tree("Sticta/co-divergence/Reviewed/ht.newick")
+
+# Root tree in the midpoint
+tree.st <- root_at_midpoint(tree.st)
 plot(tree.st)
 
-# Generate distance matrix from phylogenetic distances
-ITS_matrix <- cophenetic.phylo(tree.st) 
-
-# Bray-Curtis matrix
-
-ral.abd.asv <- read.table("Sticta/co-divergence/Relative-abundance-tables/Ral-sticta-asv-by-specie.txt")
-bray_dist_asv <- vegdist(t(ral.abd.asv), method="bray")
-bray_dist_mt_asv <- as.matrix(bray_dist_asv) 
-
-# Mantel
-mantel_bray_asv = vegan::mantel(bray_dist_mt_asv, ITS_matrix, method = "pearson", permutations = 9999, na.rm = TRUE)
-mantel_bray_asv
-
-# 2. Topological congruence
-
-# Microbiota Dendrograms
+# Load microbiota dendrograms
 
 #Bray-Curtis Class level
-px.br.cl <- read.tree("Sticta/co-divergence/Dendograms/bray-curtis-collapse-class.newick")
+px.br.cl <- read.tree("Sticta/co-divergence/Reviewed/Dendograms/bray-curtis-collapse-class.newick")
+is.binary(px.br.cl)
+
+#Bray-Curtis Family level
+px.br.fm <- read.tree("Sticta/co-divergence/Reviewed/Dendograms/bray-curtis-collapse-family.newick") 
+is.binary(px.br.fm)
 
 #Bray-Curtis Genus level
-px.br.gn <- read.tree("Sticta/co-divergence/Dendograms/bray-curtis-collapse-genus.newick") 
+px.br.gn <- read.tree("Sticta/co-divergence/Reviewed/Dendograms/bray-curtis-collapse-genus.newick") 
+plot(px.br.gn)
+is.binary(px.br.gn)
 
-#Bray-Curtis asv level
-px.br.asv <- read.tree("Sticta/co-divergence/Dendograms/bray-curtis-collapse-asv.newick") 
-plot(px.br.asv)
+#Bray-Curtis ASV level
+px.br.asv <- read.tree("Sticta/co-divergence/Reviewed/Dendograms/bray-curtis-collapse-asv.newick") 
+is.binary(px.br.asv)
 
 #Unifrac
-px.uni <- read.tree("Sticta/co-divergence/Dendograms/unifrac.newick")
-px.wuni <- read.tree("Sticta/co-divergence/Dendograms/wunifrac.newick")
+px.uni <- read.tree("Sticta/co-divergence/Reviewed/unifrac-collapse-asv.newick") 
+is.binary(px.uni)
+
+#Wunifrac
+px.wuni <- read.tree("Sticta/co-divergence/Reviewed/wunifrac-collapse-asv.newick") 
+is.binary(px.wuni)
 
 # Make a list with all dendrograms they can be use with the function tanglegram()
-microbiota.dend <- c(px.br.asv, px.br.gn, px.uni, px.wuni)
+microbiota.dend <- c(px.br.cl, px.br.fm, px.br.gn, px.br.asv, px.uni, px.wuni)
 
 ##### Visualization comparison
 
@@ -80,7 +75,7 @@ plot(pxo1)
 
 ### Loop tanglegrams visualization
 
-pdf("Sticta/co-divergence/tanglegram_Unifrac.pdf", 
+pdf("Sticta/co-divergence/Reviewed/tanglegrams.pdf", 
     width = 7 , 
     height = 5)
 
@@ -90,7 +85,7 @@ pdf("Sticta/co-divergence/tanglegram_Unifrac.pdf",
 tanglegrams = function(tree.2) {
   
   #Make tree a hierarchical objecct and dendrogram
-  dend.tree <- tree.2 %>% as.hclust.phylo() %>% as.dendrogram()
+  dend.tree <- tree.2 %>% as.dendrogram()
   #Intersect trees
   dend_intersect <- intersect_trees(pxo1, dend.tree)
   ## Save pruned tree_1 
@@ -120,21 +115,19 @@ tanglegrams = function(tree.2) {
   
   dendextend::untangle(PXO1, PXO.tree, method = "random") %>% #untangle
     
-  #Generate tanglegram
-  tanglegram( common_subtrees_color_lines = TRUE, 
-              highlight_distinct_edges  = FALSE, 
-              highlight_branches_lwd=FALSE, 
-              margin_inner=10,
-              lwd=2 )
+    #Generate tanglegram
+    tanglegram( common_subtrees_color_lines = TRUE, 
+                highlight_distinct_edges  = FALSE, 
+                highlight_branches_lwd=FALSE, 
+                margin_inner=10,
+                lwd=2 )
   
 }
 
-tanglegrams(px.uni)
+# Generate tanglegrams
 
-#res <- lapply(microbiota.dend, tanglegrams)
+res <- lapply(microbiota.dend, tanglegrams)
 
 dev.off()
-
-
 
 

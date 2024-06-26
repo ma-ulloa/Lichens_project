@@ -35,7 +35,7 @@ taxmat_16S <- read.delim2("Raw_data/taxonomy-16S.tsv")
 taxmat_16S <- taxmat_16S %>% column_to_rownames(var = "Feature.ID")
 
 # Sample metadata
-sampledata_16S <- read.delim2("Raw_data/sample-metadata-16S-edit-stereo.tsv")
+sampledata_16S <- read.delim2("Raw_data/metadata_updated.tsv")
 rownames(sampledata_16S) <- sampledata_16S$sample.id
 
 # Phylogenetic tree - rooted

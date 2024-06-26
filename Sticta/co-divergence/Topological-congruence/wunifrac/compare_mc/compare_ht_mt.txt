@@ -1,2 +1,0 @@
-Tree	MatchingCluster	MatchingCluster_toYuleAvg	MatchingCluster_toUnifAvg
-1	0.0000	0.0000	0.0000

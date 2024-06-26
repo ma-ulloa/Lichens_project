@@ -51,42 +51,27 @@ data_alphadiv <- cbind(meta_ste, t(data_richness), data_shannon, data_evenness) 
 rm(data_richness, data_evenness, data_shannon)  
 
 # There is only one samples that was classified as Stereocaulon by morphology
-data_alphadiv <- data_alphadiv[-13,]
+data_alphadiv <- data_alphadiv %>%
+                 filter(species.checked != "Stereocaulon novogranatense")
 
 # Visualization
 
-col_alp <- RColorBrewer::brewer.pal(3, "Dark2")
+col_alp <- RColorBrewer::brewer.pal(2, "Dark2")
 
-comparison <- list(c("ramulosum", "pomiferum"),    
-                   c("tomentosum", "pomiferum"),    
-                   c("tomentosum", "ramulosum"))
-
-P1 <- ggplot(data_alphadiv, aes(x=host_species, y=S.chao1)) +
+P1 <- ggplot(data_alphadiv, aes(x=species.checked, y=S.chao1)) +
       geom_boxplot() +
-      labs(title= 'Chao1', x= ' ', y= '', tag = "A") +
+      labs(title= '', x= ' ', y= 'Chao1', tag = "A") +
       geom_point() + 
-      theme_classic() +
-      geom_signif(comparisons = comparison,
-                  map_signif_level = TRUE,
-                  textsize = 4,
-                  margin_top = 0.08,
-                  step_increase = 0.08,
-                  tip_length = 0.01)
+      theme_classic() 
 
-P2 <- ggplot(data_alphadiv, aes(x=host_species, y=data_shannon)) +
+P2 <- ggplot(data_alphadiv, aes(x=species.checked, y=data_shannon)) +
       geom_boxplot() +
-      labs(title= 'Shannon', x= ' ', y= '', tag = "B") +
+      labs(title= '', x= ' ', y= 'Shannon', tag = "B") +
       geom_point() + 
-      theme_classic() +
-      geom_signif(comparisons = comparison,
-                  map_signif_level = TRUE,
-                  textsize = 4,
-                  margin_top = 0.08,
-                  step_increase = 0.08,
-                  tip_length = 0.01)
+      theme_classic() 
 
 pdf("Stereo/AlphaD_stereo.pdf",
-    width = 14,
+    width = 10,
     height = 6
 )
 
@@ -97,12 +82,12 @@ dev.off()
 # Stats Alpha-D
 
 # Shannon
-anova.site = aov(data_shannon ~ host_species, data = data_alphadiv)
+anova.site = aov(data_shannon ~ species.checked, data = data_alphadiv)
 summary(anova.site)
 TukeyHSD(anova.site)
 
 # Chao1
-anova.site.chao = aov(S.chao1 ~ host_species, data = data_alphadiv)
+anova.site.chao = aov(S.chao1 ~ species.checked, data = data_alphadiv)
 summary(anova.site)
 TukeyHSD(anova.site.chao)
 
@@ -110,16 +95,10 @@ TukeyHSD(anova.site.chao)
 
 ## Subset for Sterocaulon Atlanticus 
 
-st.atlanticus <- c("Sample5", "Sample13", "Sample26",
-                   "Sample27","Sample28", "Sample45",
-                   "Sample51", "Sample80", "Sample85",
-                   "Sample86","Sample89", "Sample89", 
-                   "Sample90", "Sample91", "Sample92",
-                   "Sample93","Sample95", "Sample96",
-                   "Sample97", "Sample99", "Sample100", 
-                   "Sample139", "Sample140")
+S.ramulosum <- meta_ste %>% filter(species.checked == "Stereocaulon ramulosum") %>%
+               pull(sample.id)
 
-ps.stereo <- subset_samples(physeq.ste, sample.id %in% st.atlanticus)
+ps.stereo <- subset_samples(physeq.ste, sample.id %in% S.ramulosum)
 
 
 ################################################################################
@@ -235,7 +214,7 @@ atlan.bray <- merge(scores, sample_ste[,c("sample.id","site")],
 # Set colors
 col = c("#1B9E77","#E6F598","#CA9822", "#351B9E")
 
-pdf("Stereo/PCoA_stereo_atlanticum.pdf",
+pdf("Stereo/PCoA_Stereo_ramulosum.pdf",
     width = 8,
     height = 5)
 
@@ -249,7 +228,7 @@ atlan.bray %>%
   scale_size(guide = "none") +  # Remove legend
   labs(x = paste0("Axis 1 (", round(proportion_exp[1] * 100), "%)"),  # Adjusted axis labels with percentages
        y = paste0("Axis 2 (", round(proportion_exp[2] * 100), "%)"),  # Adjusted axis labels with percentages
-       title = "PCoA Stereocaulon atlanticum") +  # Improved title
+       title = "PCoA Stereocaulon ramulosum") +  # Improved title
   theme(axis.title = element_text(size = 12),  # Increased size of axis labels
         plot.title = element_text(size = 14, face = "bold"),
         panel.border = element_rect(color = "black", fill = NA, size = 1))  # Increased size and bold title
